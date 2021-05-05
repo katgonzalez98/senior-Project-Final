@@ -1,0 +1,176 @@
+#start-button{
+	position: relative;
+	top: 300px;
+	left: 250px;
+	background-color: rgb(24, 62, 134);
+	color: white;
+	z-index: 10;
+	width:100px;
+	height:30px;
+	font-size: 18px;
+}
+#time{
+	position: fixed;
+	top: 100px;
+	left:820px;
+	font-size: 40px;
+	color:white;
+	z-index: 10;
+
+}
+
+#timeText{
+	position: fixed;
+	top: 70px;
+	left:650px;
+	font-size: 35px;
+	color:white;
+	z-index: 10;
+}
+
+#fortune{
+	position: fixed;
+	top: 130px;
+	left:200px;
+	font-size: 20px;
+	color:black;
+	z-index: 10;
+}
+#message{
+	position: fixed;
+	top: 130px;
+	left:200px;
+	font-size: 20px;
+	z-index: 15;
+}
+
+#mainGame{
+	position: fixed;
+	z-index: 1;
+}
+
+#guasacaca{
+	position: fixed;
+	top: 640px;
+	left:955px;
+	z-index: 12;
+}
+
+#guasacaca:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));
+}
+
+#nata{
+	position: fixed;
+	top: 640px;
+	left:130px;
+	z-index: 12;
+
+}
+
+#nata:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));
+}
+
+#jamon{
+	position: fixed;
+	top: 645px;
+	left:298px;
+	z-index: 12;
+}
+
+#jamon:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));
+}
+
+#perico{
+	position: fixed;
+	top: 645px;
+	left:475px;
+	z-index: 12;	
+}
+
+#perico:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));
+
+}
+
+#carne{
+	position: fixed;
+	top: 645px;
+	left:637px;
+	z-index: 12;	
+}
+
+#carne:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));	
+}
+
+#cheese{
+	position: fixed;
+	top: 645px;
+	left:810px;
+	z-index: 12;	
+}
+
+#cheese:hover{
+	transform: scale(1.05);
+	filter: drop-shadow(10px 5px 2px rgba(246, 248, 113, 0.5));	
+}
+
+#GameOver{
+	position: fixed;
+	z-index: 1;
+}
+
+#playAgain{
+	position: fixed;
+	top: 410px;
+	left:350px;
+	z-index: 12;	
+}
+
+.elementToFadeInAndOut {
+	position: fixed;
+    width:200px;
+    height: 200px;
+	
+    background-image:url('arepa.png');
+	background-repeat: no-repeat;
+	z-index:15;
+	top: 320px;
+	left:530px;
+    } 
+
+	#btn{
+		position: fixed;
+		top: 450px;
+	left:800px;
+	z-index: 12;
+	}
+
+
+#pointDisplay{
+	position: fixed;
+	top: 300px;
+	left:450px;
+	font-size: 40px;
+	z-index: 15;
+}
+
+#p{
+	position: fixed;
+	top: 150px;
+	left:650px;
+	font-size: 35px;
+	color:white;
+	z-index: 10;
+
+}
+
+

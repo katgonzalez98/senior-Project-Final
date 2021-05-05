@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="app.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			function startTimer(duration, display) {
+				var timer = duration, minutes, seconds;
+				var end =setInterval(function () {
+					minutes = parseInt(timer / 60, 10)
+					seconds = parseInt(timer % 60, 10);
+		
+					minutes = minutes < 10 ? "0" + minutes : minutes;
+					seconds = seconds < 10 ? "0" + seconds : seconds;
+		
+					display.textContent = minutes + ":" + seconds;
+		
+					if (--timer < 0) {
+						window.location = "endScreen.html";
+						clearInterval(end);
+					}
+				}, 1000);
+			}
+		
+			window.onload = function () {
+				var fiveMinutes = 120,
+					display = document.querySelector('#time');
+				startTimer(fiveMinutes, display);
+			};
+		</script>
+
+			
+	</head>
+	<body>
+		<div><span id="time">02:00</span></div>
+<form id="form1" runat="server">
+
+</form>
+<h3 id="timeText">Time Left: </h3>
+		<button id="start-button" >Order Up</button>
+		<img src="MainPage.jpg" alt="foodstand" width="1000" height="800" id="mainGame">
+		<div id="fortune" ></div>
+		<img src="Guasacaca.png" alt="greenspread" id="guasacaca">
+		<img src="nata.png" alt="whitespread" id="nata">
+		<img src="jamon.png" alt="ham" id="jamon">
+		<img src="perico.png" alt="eggs" id="perico">
+		<img src="carne.png" alt="meat" id="carne">
+		<img src="cheese.png" alt="shreddedcheese" id="cheese">
+
+		<button id="btn" >Check Order</button>
+		<div class="elementToFadeInAndOut"></div>
+		<p id="p" onclick="addPoint()">Points:</p>
+		
+	
+	</body>
+</html>
